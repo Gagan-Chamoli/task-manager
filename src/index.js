@@ -2,8 +2,8 @@ const express = require('express');
 require('./db/mongoose');
 const userRouter = require('./routers/user.js');
 const taskRouter = require('./routers/task.js')
-
-const PORT = process.env.PORT || 3000 ;
+const nodemailer = require('nodemailer');
+const PORT = process.env.PORT ;
 
 const app = express();
 
